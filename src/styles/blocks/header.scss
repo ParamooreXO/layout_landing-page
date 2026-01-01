@@ -1,4 +1,6 @@
 .header {
+  // display: none !important;
+
   box-sizing: border-box;
   height: 80vh;
   background-image: url(../images/header-bg-mobile.png);
@@ -40,7 +42,7 @@
     font-size: 36px;
     line-height: 100%;
     letter-spacing: -1.5px;
-    color: $header-main-color;
+    color: $text-main-color;
 
     @include on-tablet {
       font-size: 64px;

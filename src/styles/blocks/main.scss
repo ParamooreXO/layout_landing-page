@@ -1,0 +1,17 @@
+.main {
+  display: grid;
+  margin-top: 60px;
+  grid-gap: 92px;
+  margin-bottom: 120px;
+
+  @include content-padding-inline;
+
+  @include on-tablet {
+    margin-top: 120px;
+    grid-gap: 120px;
+  }
+
+  @include on-desktop {
+    grid-gap: 164px;
+  }
+}
