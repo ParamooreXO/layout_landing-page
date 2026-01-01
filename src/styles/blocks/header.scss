@@ -1,6 +1,6 @@
 .header {
   box-sizing: border-box;
-  height: 100vh;
+  height: 80vh;
   background-image: url(../images/header-bg-mobile.png);
   background-size: cover;
   background-position: right;
@@ -9,6 +9,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include on-tablet {
+    height: 100vh;
+  }
 
   @include on-desktop {
     background-image: url(../images/header-bg.png);
