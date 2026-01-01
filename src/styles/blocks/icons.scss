@@ -35,14 +35,17 @@
       min-width: max-content;
       padding-right: 20px;
       translate: -100%;
-      opacity: 0;
-      transition: all $animation-duration;
       pointer-events: none;
+
+      opacity: 0;
+      transform: scaleY(0);
+      transition: all $animation-duration;
     }
 
     &:hover::after {
       @include on-desktop {
         opacity: 1;
+        transform: scaleX(1);
       }
     }
   }
