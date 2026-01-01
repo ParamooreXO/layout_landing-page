@@ -10,6 +10,11 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @include on-desktop {
+    background-image: url(../images/header-bg.png);
+    background-position: top;
+  }
+
   &__bottom {
     padding-bottom: 88px;
 
@@ -31,6 +36,7 @@
     font-size: 36px;
     line-height: 100%;
     letter-spacing: -1.5px;
+    color: $header-main-color;
 
     @include on-tablet {
       font-size: 64px;

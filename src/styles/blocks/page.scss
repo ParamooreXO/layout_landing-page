@@ -1,6 +1,9 @@
+html {
+  background-color: $page-bg-color;
+}
+
 .page {
   font-family: Poppins, sans-serif;
-  color: #fff;
   font-size: 16px;
   line-height: 140%;
 
@@ -8,5 +11,10 @@
 
   &__body {
     margin: 0;
+  }
+
+  &:has(.menu__page:target) {
+    overflow: hidden;
+    scrollbar-gutter: stable;
   }
 }

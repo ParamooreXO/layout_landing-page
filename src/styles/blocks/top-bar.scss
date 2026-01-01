@@ -15,9 +15,15 @@
     width: 130px;
     height: 38px;
 
+    transition: all $animation-duration;
+
     @include on-tablet {
       width: 187px;
       height: 56px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 
@@ -29,6 +35,12 @@
     @include on-tablet {
       width: 187px;
       height: 56px;
+    }
+
+    transition: all $animation-duration;
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 

@@ -19,7 +19,12 @@
     font-weight: 700;
     font-size: 12px;
     letter-spacing: 2px;
-    color: #fff;
+    color: $header-main-color;
+    transition: all $animation-duration;
+
+    &:hover {
+      transform: scale(1.1);
+    }
 
     &::after {
       content: '+1 234 555-55-55';
@@ -28,8 +33,9 @@
       padding-right: 20px;
       translate: -100%;
       opacity: 0;
-      transition: all 0.3s;
+      transition: all $animation-duration;
       pointer-events: none;
+      transform: scale(0.9);
     }
 
     &:hover::after {
@@ -39,9 +45,22 @@
 
   &--menu {
     background-image: url(../images/icons/Icon-Burger-menu.png);
+
+    transition: all $animation-duration;
+
+    &:hover {
+      background-image: url(../images/icons/Icon-Burger-menu-hover.png);
+      transform: scale(1.2);
+    }
   }
 
   &--close {
     background-image: url(../images/icons/Icon-Close.png);
+
+    transition: transform $animation-duration;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
