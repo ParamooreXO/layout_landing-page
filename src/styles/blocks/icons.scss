@@ -20,10 +20,13 @@
     font-size: 12px;
     letter-spacing: 2px;
     color: $header-main-color;
+
     transition: all $animation-duration;
 
     &:hover {
-      transform: scale(1.1);
+      @include on-desktop {
+        transform: scale(1.1);
+      }
     }
 
     &::after {
@@ -35,11 +38,12 @@
       opacity: 0;
       transition: all $animation-duration;
       pointer-events: none;
-      transform: scale(0.9);
     }
 
     &:hover::after {
-      opacity: 1;
+      @include on-desktop {
+        opacity: 1;
+      }
     }
   }
 
@@ -49,8 +53,10 @@
     transition: all $animation-duration;
 
     &:hover {
-      background-image: url(../images/icons/Icon-Burger-menu-hover.png);
-      transform: scale(1.2);
+      @include on-desktop {
+        background-image: url(../images/icons/Icon-Burger-menu-hover.png);
+        transform: scale(1.2);
+      }
     }
   }
 
@@ -60,7 +66,9 @@
     transition: transform $animation-duration;
 
     &:hover {
-      transform: scale(1.2);
+      @include on-desktop {
+        transform: scale(1.2);
+      }
     }
   }
 }

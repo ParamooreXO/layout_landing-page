@@ -30,7 +30,9 @@
     }
 
     &:hover::after {
-      transform: scaleX(100%);
+      @include on-desktop {
+        transform: scaleX(100%);
+      }
     }
   }
 }

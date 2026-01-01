@@ -23,7 +23,9 @@
     }
 
     &:hover {
-      transform: scale(1.1);
+      @include on-desktop {
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -40,7 +42,9 @@
     transition: all $animation-duration;
 
     &:hover {
-      transform: scale(1.1);
+      @include on-desktop {
+        transform: scale(1.1);
+      }
     }
   }
 
