@@ -1,5 +1,5 @@
 html {
-  background-color: $page-bg-color;
+  background-color: $menu-bg-color; // щоб перекрити полоску від scrollbar-gutter
 }
 
 @media (hover: none) {
@@ -8,10 +8,15 @@ html {
   }
 }
 
+.container {
+  @include content-padding-inline;
+}
+
 .page {
   font-family: Poppins, sans-serif;
   font-size: 16px;
   line-height: 140%;
+  color: $text-main-color;
 
   scroll-behavior: smooth;
 

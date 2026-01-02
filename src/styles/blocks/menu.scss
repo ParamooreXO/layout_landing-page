@@ -2,7 +2,7 @@
   box-sizing: border-box;
   height: 100vh;
   overflow: auto;
-  background-color: $page-bg-color;
+  background-color: $menu-bg-color;
 
   font-weight: 600;
   text-transform: uppercase;
@@ -29,21 +29,19 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: $page-bg-color;
+    background-color: $menu-bg-color;
 
     @include on-tablet {
       margin-bottom: 8px;
     }
   }
 
-  &__nav {
-    margin-bottom: 40px;
+  &__bottom {
+    margin-bottom: 30px;
   }
 
-  &__content {
-    @include content-padding-inline;
-
-    margin-bottom: 30px;
+  &__nav {
+    margin-bottom: 40px;
   }
 
   &__phone-number {
