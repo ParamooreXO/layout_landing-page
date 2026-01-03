@@ -228,15 +228,79 @@
                 <p class="detail__text">Brakes with total stopping power the second you make contact. The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</p>
               </article>
             </div>
+
+            <div class="details__button-container">
+              <button class="details__button button" type="button">Explore</button>
+            </div>
           </section>
 
-          <section class="contacts" id="contacts">
-            <h2 class="section-title">Contact us</h2>
+          <section class="contact-us" id="contacts">
+            <h2 class="section-title contact-us__title">Contact us</h2>
+
+            <div class="contact-us__content">
+              <form
+                class="contact-us__form form"
+                onsubmit="this.reset(); return false;"
+              >
+                <div class="form__fields">
+                  <div class="form__field">
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                      required
+                    >
+                  </div>
+
+                  <div class="form__field">
+                    <input
+                      class="form__input"
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    >
+                  </div>
+
+                  <div class="form__field form__field--textarea">
+                    <textarea
+                      class="form__input form__input--textarea"
+                      name="message"
+                      id="#"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" class="form__button button">Send</button>
+              </form>
+
+              <div class="contact-us__contacts">
+                <a class="contact-us__link" href="tel:+1 234 5555-55-55">
+                  <h3 class="contact-us__category">Phone</h3>
+                  <p class="contact-us__text">+1 234 5555-55-55</p>
+                </a>
+
+                <a class="contact-us__link" href="mailto: hello@miami.com">
+                  <h3 class="contact-us__category">Email</h3>
+                  <p class="contact-us__text">hello@miami.com</p>
+                </a>
+
+                <a class="contact-us__link" target="_blank" href="https://maps.app.goo.gl/gZ4fYpmssVrPCEt27">
+                  <h3 class="contact-us__category">Address</h3>
+                  <p class="contact-us__text">400 first ave.<br>suite 700 <br>Minneapolis, MN 55401</p>
+                </a>
+              </div>
+            </div>
           </section>
         </div>
       </div>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+      <!-- <img src="./src/images/footer-bg-desktop.png" alt=""> -->
+    </footer>
   </body>
 </html>
