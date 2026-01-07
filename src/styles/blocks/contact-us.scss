@@ -5,6 +5,8 @@
 
   &__content {
     @include grid-setup;
+    
+    gap: 48px;
   }
 
   &__form {
